@@ -13,10 +13,6 @@ function App() {
   const navigation = useNavigation();
   const user = useLoaderData();
 
-  useEffect(() => {
-    console.log(navigation);
-  }, [navigation]);
-
   return (
     <div className={`d-flex flex-column ${styles.appContainer}`}>
       <Header />

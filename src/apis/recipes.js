@@ -12,3 +12,13 @@ export async function getRecipes() {
     throw new Error('something went wrong');
   }
 }
+
+export function createRecipe(recipe) {
+  return fetch('https://restapi.fr/api/formexample', {
+    method: 'POST',
+    body: JSON.stringify(recipe),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+}

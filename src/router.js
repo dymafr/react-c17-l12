@@ -9,6 +9,7 @@ import ProfileData from './pages/Profile/pages/ProfileData/ProfileData';
 import ProfileForm from './pages/Profile/pages/ProfileForm/ProfileForm';
 import { rootLoader } from './loaders/rootLoader';
 import { profileLoader } from './loaders/profileLoader';
+import { profileFormAction } from './actions/profileFormAction';
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,7 @@ export const router = createBrowserRouter([
           },
           {
             path: 'form',
+            action: profileFormAction,
             element: <ProfileForm />,
           },
         ],

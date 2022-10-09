@@ -25,6 +25,9 @@ export default function Profile() {
         <li>
           <NavLink to="data">Data</NavLink>
         </li>
+        <li>
+          <NavLink to="form">Form</NavLink>
+        </li>
       </ul>
       <div className="p-20">
         <h2 className="mb-20">Profile</h2>
